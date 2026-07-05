@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ChatMessengerofficial | Официальный сайт мессенджера ChatMessenger</title>
+<meta name="description" content="ChatMessengerofficial — быстрый, красивый и безопасный мессенджер для Android и iOS. Звонки, каналы, стикеры, Premium без рекламы. Скачайте бесплатно." />
+<link rel="icon" href="icon.png" />
+<style>
+  :root{
+    --bg:#0b0e17; --bg2:#121627; --accent:#7c6cff; --accent2:#4facfe; --text:#f2f3ff; --dim:#a8adc7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+  a{color:inherit;text-decoration:none;}
+  .container{max-width:1100px;margin:0 auto;padding:0 20px;}
+  header{position:sticky;top:0;background:rgba(11,14,23,.85);backdrop-filter:blur(10px);z-index:10;border-bottom:1px solid rgba(255,255,255,.06);}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;}
+  .brand img{width:36px;height:36px;border-radius:10px;}
+  .nav a.btn{background:linear-gradient(135deg,var(--accent),var(--accent2));padding:10px 20px;border-radius:10px;font-weight:600;}
+  .hero{padding:70px 0 40px;display:flex;align-items:center;gap:50px;flex-wrap:wrap;}
+  .hero-text{flex:1;min-width:300px;}
+  .hero-text h1{font-size:44px;line-height:1.15;margin-bottom:18px;background:linear-gradient(135deg,#fff,var(--accent2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+  .hero-text p{color:var(--dim);font-size:18px;margin-bottom:26px;max-width:520px;}
+  .hero-img{flex:1;min-width:300px;text-align:center;}
+  .hero-img img{max-width:100%;border-radius:20px;box-shadow:0 30px 80px rgba(124,108,255,.25);}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));padding:14px 26px;border-radius:12px;font-weight:700;font-size:16px;display:inline-block;}
+  .btn-secondary{background:rgba(255,255,255,.08);padding:14px 26px;border-radius:12px;font-weight:600;font-size:16px;border:1px solid rgba(255,255,255,.15);}
+  .badges{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap;}
+  .badge{background:rgba(255,255,255,.06);padding:6px 14px;border-radius:20px;font-size:13px;color:var(--dim);}
+  section{padding:60px 0;}
+  .section-title{font-size:32px;text-align:center;margin-bottom:10px;}
+  .section-sub{text-align:center;color:var(--dim);margin-bottom:40px;}
+  .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
+  .feature{background:var(--bg2);padding:26px;border-radius:16px;border:1px solid rgba(255,255,255,.05);}
+  .feature .emoji{font-size:32px;margin-bottom:12px;}
+  .feature h3{font-size:18px;margin-bottom:8px;}
+  .feature p{color:var(--dim);font-size:14px;}
+  .premium-banner{background:linear-gradient(135deg,#7c6cff33,#4facfe33);border:1px solid rgba(124,108,255,.4);border-radius:20px;padding:40px;text-align:center;margin-top:20px;}
+  .premium-banner h2{font-size:28px;margin-bottom:10px;}
+  .premium-banner p{color:var(--dim);margin-bottom:20px;}
+  .price{font-size:40px;font-weight:800;margin:10px 0;}
+  .price span{font-size:16px;color:var(--dim);font-weight:400;}
+  .lead-box{background:var(--bg2);border-radius:20px;padding:36px;border:1px solid rgba(255,255,255,.06);max-width:560px;margin:0 auto;text-align:center;}
+  .lead-box input{width:100%;padding:14px;border-radius:10px;border:1px solid rgba(255,255,255,.15);background:#0b0e17;color:#fff;margin:10px 0;font-size:15px;}
+  .lead-box button{width:100%;padding:14px;border:none;cursor:pointer;}
+  .ref-note{color:var(--dim);font-size:13px;margin-top:12px;}
+  .ai-widget{position:fixed;bottom:24px;right:24px;background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:50px;padding:14px 22px;font-weight:700;box-shadow:0 10px 30px rgba(124,108,255,.5);cursor:pointer;z-index:20;display:flex;align-items:center;gap:8px;}
+  footer{padding:40px 0;text-align:center;color:var(--dim);border-top:1px solid rgba(255,255,255,.06);font-size:14px;}
+  .store-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;}
+  .platform-note{color:var(--dim);font-size:13px;margin-top:14px;}
+  #leadForm .success{color:#8bffb0;font-weight:600;display:none;}
+  ::selection{background:var(--accent);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand"><img src="icon.png" alt="ChatMessenger"/> ChatMessenger </div>
+    <a href="#download" class="btn">Скачать</a>
+  </div>
+</header>
+
+<section class="hero container">
+  <div class="hero-text">
+    <h1>Общайтесь без границ вместе с Никой</h1>
+    <p>ChatMessenger — быстрый, красивый и безопасный мессенджер для Android и iOS. Звонки, каналы, стикеры, бизнес-чаты и умный ИИ-бот — всё в одном приложении, полностью на вашем языке.</p>
+    <div class="cta-row">
+      <a href="#download" class="btn-primary">⬇ Скачать бесплатно</a>
+      <a href="#premium" class="btn-secondary">✨ Premium 599₽/мес</a>
+    </div>
+    <div class="badges">
+      <span class="badge">🌍 Все языки</span>
+      <span class="badge">🔒 Приватность</span>
+      <span class="badge">📱 Android · iOS · Web</span>
+      <span class="badge">🤖 ИИ-бот</span>
+    </div>
+  </div>
+  <div class="hero-img"><img src="hero.png" alt="ChatMessenger app"/></div>
+</section>
+
+<section class="container">
+  <h2 class="section-title">Почему ChatMessenger</h2>
+  <p class="section-sub">Всё, что нужно современному мессенджеру — и даже больше</p>
+  <div class="features">
+    <div class="feature"><div class="emoji">💬</div><h3>Чаты и каналы</h3><p>Личные чаты, группы, публичные каналы и бизнес-чаты для команд и брендов.</p></div>
+    <div class="feature"><div class="emoji">📞</div><h3>Звонки</h3><p>Голосовые и видеозвонки в один тап, с шумоподавлением и качественной картинкой.</p></div>
+    <div class="feature"><div class="emoji">🎙️</div><h3>Голосовые сообщения</h3><p>Запись и мгновенное прослушивание аудиосообщений прямо в чате.</p></div>
+    <div class="feature"><div class="emoji">🎬</div><h3>Пульс и видео</h3><p>Лента коротких видео с редактором: обрезка, фильтры, текстовые оверлеи.</p></div>
+    <div class="feature"><div class="emoji">🎨</div><h3>Темы и обои</h3><p>Десятки фонов переписки и эксклюзивные Premium-темы оформления.</p></div>
+    <div class="feature"><div class="emoji">🌐</div><h3>Мультиязычность</h3><p>Полный перевод интерфейса — переключайте язык в один клик, приложение говорит на вашем.</p></div>
+    <div class="feature"><div class="emoji">🤖</div><h3>ИИ-бот</h3><p>Умный помощник отвечает на любые вопросы. 99 бесплатных запросов, затем — безлимит в Premium.</p></div>
+    <div class="feature"><div class="emoji">🛠️</div><h3>Конструктор ботов</h3><p>Создавайте собственных чат-ботов внутри приложения без кода.</p></div>
+  </div>
+</section>
+
+<section class="container" id="premium">
+  <div class="premium-banner">
+    <h2>✨ ChatMessenger Premium</h2>
+    <p>Без рекламы · без ограничений на размер файлов · значок Premium · эксклюзивные стикеры и темы · скрытие номера и статуса «был(а) в сети» · безлимитный ИИ-бот</p>
+    <div class="price">599₽ <span>/ месяц</span></div>
+    <p style="font-size:13px;">Оплата через СБП, заявка проверяется вручную владельцем сервиса — честно и прозрачно, без скрытых списаний.</p>
+    <a href="#download" class="btn-primary">Оформить в приложении</a>
+  </div>
+</section>
+
+<section class="container" id="download">
+  <h2 class="section-title">Скачать ChatMessenger</h2>
+  <p class="section-sub">Работает на Android, iOS и прямо в браузере Chrome — на всех языках мира</p>
+  <div class="lead-box">
+    <h3 style="margin-bottom:6px;">Прямая ссылка на APK (Android)</h3>
+    <p style="color:var(--dim);font-size:14px;margin-bottom:16px;">Последняя версия 1.2.0 — Premium с ручным подтверждением оплаты, ИИ-бот, звонки, обои чата и полный перевод интерфейса.</p>
+    <div class="store-row" style="justify-content:center;">
+      <a class="btn-primary" href="ChatMessenger-v1.2.0.apk" download>⬇ Скачать APK для Android</a>
+    </div>
+    <p class="platform-note">iOS и веб-версия для Chrome — в разработке, следите за обновлениями. Установка APK: разрешите «Установку из неизвестных источников» в настройках телефона.</p>
+
+    <form id="leadForm" style="margin-top:26px;text-align:left;">
+      <label style="font-size:13px;color:var(--dim);">Оставьте e-mail — пришлём ссылку и новости о запуске iOS/веб-версии</label>
+      <input type="email" id="leadEmail" placeholder="you@email.com" required />
+      <button type="submit" class="btn-primary">Получить ссылку и бонус</button>
+      <div class="success" id="leadSuccess">Спасибо! Проверьте почту — ссылка на скачивание и бонусный месяц Premium уже летят к вам 🚀</div>
+    </form>
+    <p class="ref-note">Приглашайте друзей: за каждого, кто установит ChatMessenger по вашей ссылке, вы получаете +7 дней Premium.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 ChatMessengerofficial. Официальный сайт мессенджера ChatMessenger.</p>
+    <p style="margin-top:6px;">По вопросам сотрудничества и рекламы — пишите в приложении в чат поддержки.</p>
+  </div>
+</footer>
+
+<div class="ai-widget" onclick="document.getElementById('download').scrollIntoView({behavior:'smooth'})">🤖 Спросить ИИ-бота</div>
+
+<script>
+  document.getElementById('leadForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var email = document.getElementById('leadEmail').value;
+    localStorage.setItem('cm_lead_' + Date.now(), email);
+    document.getElementById('leadSuccess').style.display = 'block';
+    e.target.querySelector('button').textContent = 'Отправлено ✓';
+  });
+</script>
+
+</body>
+</html>
